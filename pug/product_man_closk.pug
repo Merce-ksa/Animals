@@ -1,0 +1,11 @@
+extends template.pug
+include libs/mixins.pug
+block content
+	main
+		+crumsListProduct("man", "Hombre", "ClosK")
+		
+		section.product__detail
+			+productDescription("man", "m_closk_white.png", "ClosK", "MIL1001", "18,5 €", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.")
+
+	script(src="js/product_detail.js")
+	script(src="js/color_active.js")

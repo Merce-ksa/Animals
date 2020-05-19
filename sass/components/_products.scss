@@ -81,22 +81,18 @@
     }
 
     li:nth-child(2){
-        background-color: $colorlist-2;
-    }
-
-    li:nth-child(3){
         background-color: $colorlist-3;
     }
 
-    li:nth-child(4){
+    li:nth-child(3){
         background-color: $colorlist-4;
     }
 
-    li:nth-child(5){
+    li:nth-child(4){
         background-color: $colorlist-5;
     }
 
-    li:nth-child(6){
+    li:nth-child(5){
         background-color: $colorlist-6;
     }
 
@@ -177,5 +173,9 @@
     .btn-buy {
         width: 100%;
         @extend %button_main;
+    }
+
+    .btn-buy a {
+        color: $white;
     }
 }

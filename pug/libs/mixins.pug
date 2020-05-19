@@ -50,9 +50,9 @@ mixin buttonsQuantity
 		span#qty.quantity 1
 		span#plus.icon-plus
 
-mixin productDescription(srcImage, dataColor, titleShirt, codeShirt, priceProduct, descriptionShirt)
+mixin productDescription(gender, srcImage, titleShirt, codeShirt, priceProduct, descriptionShirt)
 	.product__detail__image
-		img(src="img/"+srcImage data-color=dataColor)#product-img
+		img(src="img/"+srcImage data-gender=gender)#product-img
 		span.icon-maximize-2
 
 	.product__detail__description
@@ -64,12 +64,11 @@ mixin productDescription(srcImage, dataColor, titleShirt, codeShirt, priceProduc
 			.filter-colors
 				h3 Colors
 				ul.colors-list
-					li: a(href="#").color
-					li: a(href="#").color
-					li: a(href="#").color
-					li: a(href="#").color
-					li: a(href="#").color
-					li: a(href="#").color
+					li: a(href="#").color#white
+					li: a(href="#").color#grey
+					li: a(href="#").color#blue
+					li: a(href="#").color#green
+					li: a(href="#").color#yellow
 			.filter-sizes
 				h3 Tallas
 				ul.sizes-list
@@ -86,4 +85,5 @@ mixin productDescription(srcImage, dataColor, titleShirt, codeShirt, priceProduc
 						+buttonsQuantity
 						button#cart.btn-cart Añadir al carro
 					.buttons__cart__buy
-						button#buy.btn-buy Comprar
+						button#buy.btn-buy
+							a(href="cart.html") Comprar

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, Animation">
+    <meta name="author" content="Mercè Casamitjana">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Animals</title>
+  </head>
+  <body>
+    <header class="nav__main" id="header-main">
+      <div class="menu-hamburger"><a href="#" id="menu_on"><span></span><span></span><span></span></a></div>
+      <div class="header__brand"><a class="brand" href="index.html"><img class="brand-img" src="img/brand.png"></a></div>
+      <div class="header__menu">
+        <div class="menu-nav" id="menu">
+          <ul class="nav-options">
+            <li><a class="shop" href="index.html">Inicio</a></li>
+            <li><a class="collection" href="shop.html">Tienda</a></li>
+            <li><a class="about" href="about.html">Nosotros</a></li>
+            <li><a class="contact" href="contact.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__user">
+        <ul>
+          <li><a class="icon-user" href="user.html"></a></li>
+          <li><a class="icon-shopping-cart" href="cart.html" id="icon-shopping-cart" data-count="0"></a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="crums" id="crums">
+        <ul class="crum-list">
+          <li><a class="crum-link" href="index.html">Inicio</a></li>
+          <li><span class="icon-chevron-right"></span></li>
+          <li><a class="crum-link" href="shop.html">Tienda</a></li>
+          <li><span class="icon-chevron-right"></span></li>
+          <li><a class="crum-link" href="child.html">Niño</a></li>
+          <li><span class="icon-chevron-right"></span></li>
+          <li><a class="crum-link active" href="#">ClosK</a></li>
+        </ul>
+      </div>
+      <section class="product__detail">
+        <div class="product__detail__image"><img src="img/c_closk_white.png" data-gender="child" id="product-img"/><span class="icon-maximize-2"></span></div>
+        <div class="product__detail__description">
+          <h1 class="title">ClosK</h1>
+          <h4 class="code">MIL1001</h4>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+          <div class="product__detail__filter">
+            <div class="filter-colors">
+              <h3>Colors</h3>
+              <ul class="colors-list">
+                <li><a class="color" href="#" id="white"></a></li>
+                <li><a class="color" href="#" id="grey"></a></li>
+                <li><a class="color" href="#" id="blue"></a></li>
+                <li><a class="color" href="#" id="green"></a></li>
+                <li><a class="color" href="#" id="yellow"></a></li>
+              </ul>
+            </div>
+            <div class="filter-sizes">
+              <h3>Tallas</h3>
+              <ul class="sizes-list">
+                <li><a class="size" href="#">XS</a></li>
+                <li><a class="size" href="#">S</a></li>
+                <li><a class="size" href="#">M</a></li>
+                <li><a class="size" href="#">L</a></li>
+                <li><a class="size" href="#">XL</a></li>
+                <li><a class="size" href="#">XXL</a></li>
+              </ul>
+            </div>
+            <div class="product__detail__cart">
+              <h3 class="description-price">12 €</h3>
+              <div class="buttons__cart">
+                <div class="buttons__cart__add">
+                  <div class="add-quantity"><span class="icon-minus" id="minus"></span><span class="quantity" id="qty">1</span><span class="icon-plus" id="plus"></span></div>
+                  <button class="btn-cart" id="cart">Añadir al carro</button>
+                </div>
+                <div class="buttons__cart__buy">
+                  <button class="btn-buy" id="buy"><a href="cart.html">Comprar</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/product_detail.js"></script>
+    <script src="js/color_active.js"></script>
+    <footer>
+      <section class="footer__main">
+        <div class="footer__inf">
+          <div class="help">
+            <h4>Ayuda e información</h4>
+            <ul>
+              <li><a class="help-link" href="delivery.html">Entregas y devoluciones</a></li>
+              <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+          </div>
+          <div class="about">
+            <h4>Sobre nosotros</h4>
+            <ul>
+              <li><a href="about.html">Sobre nosotros</a></li>
+              <li><a href="contact.html">Contacta</a></li>
+            </ul>
+          </div>
+          <div class="shop-online">
+            <h4>Tienda online</h4>
+            <ul>
+              <li><a href="mujer.html">Mujer</a></li>
+              <li><a href="man.html">Hombre</a></li>
+              <li><a href="nino.html">Niño</a></li>
+              <li><a href="bebe.html">Bebé</a></li>
+              <li><a href="bolsas.html">Bolsas</a></li>
+            </ul>
+          </div>
+          <div class="social-media">
+            <h4>Síguenos</h4>
+                <ul>
+                  <li><a class="icon-ffacebook" href="#"></a></li>
+                  <li><a class="icon-pinterest" href="#"></a></li>
+                  <li><a class="icon-instagram" href="#"></a></li>
+                  <li><a class="icon-twitter" href="#"></a></li>
+                </ul>
+          </div>
+          <div class="return">
+            <div class="btn_return"><a class="icon-chevron-up" href="#"></a></div>
+          </div>
+        </div>
+      </section>
+      <section class="footer__main">
+        <div class="footer__privacy">
+          <div class="privacy-design">
+            <ul>
+              <li><img src="img/brand.png" alt="Animals image"></li>
+              <li><a href="https://github.com/Merce-ksa?tab=repositories" target="_blank"><span class="icon-github"></span></a></li>
+              <li><a href="https://www.freepik.es/psd/negocios">Imágenes - www.freepik.es</a></li>
+            </ul>
+          </div>
+          <div class="privacy-terms">
+            <ul>
+              <li><a href="#">Política de privacidad</a></li>
+              <li><a href="#">Términos de uso</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="js/header.js"></script>
+    <script src="js/menu.js"></script>
+  </body>
+</html>

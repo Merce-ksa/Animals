@@ -947,18 +947,15 @@ footer section:last-child {
   background-color: #f7f7f7;
 }
 .colors-list li:nth-child(2) {
-  background-color: #e7ddd3;
-}
-.colors-list li:nth-child(3) {
   background-color: #aaaaaa;
 }
-.colors-list li:nth-child(4) {
+.colors-list li:nth-child(3) {
   background-color: #5898d3;
 }
-.colors-list li:nth-child(5) {
+.colors-list li:nth-child(4) {
   background-color: #3da34a;
 }
-.colors-list li:nth-child(6) {
+.colors-list li:nth-child(5) {
   background-color: #eced99;
 }
 .colors-list .color {
@@ -1031,6 +1028,9 @@ footer section:last-child {
 .buttons__cart__buy .btn-buy {
   width: 100%;
 }
+.buttons__cart__buy .btn-buy a {
+  color: white;
+}
 
 input[type=text], input[type=email], textarea {
   width: 100%;
@@ -1102,6 +1102,7 @@ input[type=radio]:checked + label {
 }
 .form__remember-me, .form__privacity {
   margin-top: 10px;
+  font-size: 14px;
 }
 .form span {
   color: #0f4c81;
@@ -1249,20 +1250,20 @@ input[type=radio]:checked + label {
   -ms-grid-row: 1;
   -ms-grid-column: 5;
   grid-area: child;
-  background-image: url("../img/niño.jpg");
+  background-image: url("../img/c_closk_white.png");
   background-position: center left;
-  background-size: 190%;
+  background-size: 110%;
 }
 .content__section:nth-child(2):hover {
   background-position: center left;
-  background-size: 200%;
+  background-size: 120%;
 }
 .content__section:nth-child(3) {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   -ms-grid-column: 7;
   grid-area: man;
-  background-image: url("../img/m_closk.png");
+  background-image: url("../img/m_closk_white.png");
   background-position: left;
   background-size: 150%;
 }
@@ -1312,10 +1313,10 @@ input[type=radio]:checked + label {
     background-size: 130%;
   }
   .content__section:nth-child(2) {
-    background-size: 220%;
+    background-size: 110%;
   }
   .content__section:nth-child(2):hover {
-    background-size: 230%;
+    background-size: 120%;
   }
   .content__section:nth-child(3) {
     background-size: 190%;
@@ -1343,10 +1344,10 @@ input[type=radio]:checked + label {
     background-size: 130%;
   }
   .content__section:nth-child(2) {
-    background-size: 120%;
+    background-size: 100%;
   }
   .content__section:nth-child(2):hover {
-    background-size: 130%;
+    background-size: 110%;
   }
   .content__section:nth-child(3) {
     background-size: 100%;
@@ -1398,10 +1399,10 @@ input[type=radio]:checked + label {
     background-size: 130%;
   }
   .content__section:nth-child(2) {
-    background-size: 110%;
+    background-size: 100%;
   }
   .content__section:nth-child(2):hover {
-    background-size: 120%;
+    background-size: 110%;
   }
   .content__section:nth-child(3) {
     background-size: 100%;
@@ -1523,6 +1524,16 @@ input[type=radio]:checked + label {
 .user__content {
   width: 50%;
   margin: auto;
+}
+@media only screen and (max-width: 768px) {
+  .user__content {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .user__content {
+    width: 100%;
+  }
 }
 
 .tabs {

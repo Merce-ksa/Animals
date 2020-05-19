@@ -1,6 +1,13 @@
 .user__content {
   width: 50%;
   margin: auto;
+
+  @include media(mobile-only){
+    width: 80%; 
+  } 
+  @include media(mobile-l){
+    width: 100%;
+  }
 }
 
 .tabs {

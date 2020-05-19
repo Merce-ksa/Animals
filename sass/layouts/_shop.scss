@@ -34,19 +34,19 @@
 
   &__section:nth-child(2) {
     grid-area: child;
-    background-image: url("../img/niño.jpg");
+    background-image: url("../img/c_closk_white.png");
     background-position: center left;
-    background-size: 190%;
+    background-size: 110%;
   }
 
   &__section:nth-child(2):hover {
     background-position: center left;
-    background-size: 200%;
+    background-size: 120%;
   }
 
   &__section:nth-child(3) {
     grid-area: man;
-    background-image: url("../img/m_closk.png");
+    background-image: url("../img/m_closk_white.png");
     background-position: left;
     background-size: 150%;
   }
@@ -99,11 +99,11 @@
     }
 
     &__section:nth-child(2) {
-      background-size: 220%;
+      background-size: 110%;
     }
   
     &__section:nth-child(2):hover {
-      background-size: 230%;
+      background-size: 120%;
     }
   
     &__section:nth-child(3) {
@@ -139,11 +139,11 @@
     }
 
     &__section:nth-child(2) {
-      background-size: 120%;
+      background-size: 100%;
     }
 
     &__section:nth-child(2):hover {
-      background-size: 130%;
+      background-size: 110%;
     }
 
     &__section:nth-child(3) {
@@ -182,11 +182,11 @@
     }
 
     &__section:nth-child(2) {
-      background-size: 110%;
+      background-size: 100%;
     }
 
     &__section:nth-child(2):hover {
-      background-size: 120%;
+      background-size: 110%;
     }
 
     &__section:nth-child(3) {
