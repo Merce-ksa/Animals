@@ -37,7 +37,7 @@
 .content__section:nth-child(1) {
   grid-column-start: 1;
   grid-column-end: 3;
-  background-image: url(../img/W_il1_blue.jpg);
+  background-image: url(../img/w_il1_blue.jpg);
   background-position: left;
   background-size: 150%;
 }
