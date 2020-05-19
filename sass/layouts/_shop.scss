@@ -1,0 +1,208 @@
+.content {
+  width: 100%;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "woman woman child man"
+                       "baby bag bag man";
+  grid-gap: 10px;
+  box-sizing: border-box; 
+
+  &__section {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    background-origin: content-box ;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+  }
+
+  &__section:nth-child(1) {
+    grid-area: woman;
+    background-image: url("../img/W_il1_blue.jpg");
+    background-position: center;
+    background-size: 100%;
+  }
+
+  &__section:nth-child(1):hover {
+    background-size: 110%;
+  }
+
+  &__section:nth-child(2) {
+    grid-area: child;
+    background-image: url("../img/niño.jpg");
+    background-position: center left;
+    background-size: 190%;
+  }
+
+  &__section:nth-child(2):hover {
+    background-position: center left;
+    background-size: 200%;
+  }
+
+  &__section:nth-child(3) {
+    grid-area: man;
+    background-image: url("../img/m_closk.png");
+    background-position: left;
+    background-size: 150%;
+  }
+
+  &__section:nth-child(3):hover {
+    background-position: left;
+    background-size: 160%;
+  }
+
+  &__section:nth-child(4) {
+    grid-area: baby;
+    background-image: url("../img/bebe.jpg");
+    background-position: center;
+    background-size: 120%;
+  }
+
+  &__section:nth-child(4):hover {
+    background-position: center;
+    background-size: 130%;
+  }
+
+  &__section:nth-child(5) {
+    grid-area: bag;
+    background-image: url("../img/bag.png");
+    background-position: bottom;
+    background-size: 70%;
+    background-color: #d2d2d2;
+  }
+
+  &__section:nth-child(5):hover {
+    background-position: bottom;
+    background-size: 80%;
+    background-color: #d2d2d2;
+  }
+
+  &__section h1 {
+    margin-left: 20px;
+    color:$white;
+  }
+
+  @include media(desktop-s){
+    grid-gap: 5px;
+
+    &__section:nth-child(1) {
+      background-size: 120%;
+    }
+
+    &__section:nth-child(1):hover {
+      background-size: 130%;
+    }
+
+    &__section:nth-child(2) {
+      background-size: 220%;
+    }
+  
+    &__section:nth-child(2):hover {
+      background-size: 230%;
+    }
+  
+    &__section:nth-child(3) {
+      background-size: 190%;
+    }
+  
+    &__section:nth-child(3):hover {
+      background-size: 200%;
+    }
+
+    &__section:nth-child(5) {
+      background-size: 100%;
+    }
+
+    &__section:nth-child(5):hover {
+      background-size: 110%;
+    }
+  }
+
+  @include media(mobile-only){
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "woman man"
+                         "bag bag"
+                         "baby child";
+
+    &__section:nth-child(1) {
+      background-size: 120%;
+    }
+
+    &__section:nth-child(1):hover {
+      background-size: 130%;
+    }
+
+    &__section:nth-child(2) {
+      background-size: 120%;
+    }
+
+    &__section:nth-child(2):hover {
+      background-size: 130%;
+    }
+
+    &__section:nth-child(3) {
+      background-size: 100%;
+    }
+
+    &__section:nth-child(3):hover {
+      background-size: 110%;
+    }
+
+    &__section:nth-child(5) {
+      background-size: 60%;
+    }
+
+    &__section:nth-child(5):hover {
+      background-size: 70%;
+    }
+  }
+
+  @include media(mobile-l){
+    height: 800px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "woman"
+                         "man"
+                         "bag"
+                         "child"
+                         "baby";
+
+    &__section:nth-child(1) {
+      background-position: top; 
+    }
+
+    &__section:nth-child(1):hover {
+      background-size: 130%;
+    }
+
+    &__section:nth-child(2) {
+      background-size: 110%;
+    }
+
+    &__section:nth-child(2):hover {
+      background-size: 120%;
+    }
+
+    &__section:nth-child(3) {
+      background-size: 100%;
+    }
+
+    &__section:nth-child(3):hover {
+      background-size: 110%;
+    }
+
+    &__section:nth-child(5) {
+      background-size: 60%;
+    }
+
+    &__section:nth-child(5):hover {
+      background-size: 70%;
+    }   
+  }
+}

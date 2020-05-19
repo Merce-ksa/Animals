@@ -1,0 +1,41 @@
+@mixin hoverBorder {
+    a::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 1px;
+        background: #000;
+        transition: 0.5s;
+    }
+
+    a:hover::after {
+        width: 100%;
+    }
+}
+    
+@mixin marginElemntList {
+    margin-top: 10px;
+}
+
+@mixin linkFooter {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    color: $secondary;
+    transition: 0.5s;
+}
+
+@mixin linkFooterHover {
+    color: black;
+}
+
+
+@mixin gradientHero {
+    background: rgba(15,76,129,1);
+    background: -moz-linear-gradient(left, rgba(15,76,129,1) 0%, rgba(43,103,153,0.59) 50%, rgba(15,76,129,0.17) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(15,76,129,1)), color-stop(50%, rgba(43,103,153,0.59)), color-stop(100%, rgba(15,76,129,0.17)));
+    background: -webkit-linear-gradient(left, rgba(15,76,129,1) 0%, rgba(43,103,153,0.59) 50%, rgba(15,76,129,0.17) 100%);
+    background: -o-linear-gradient(left, rgba(15,76,129,1) 0%, rgba(43,103,153,0.59) 50%, rgba(15,76,129,0.17) 100%);
+    background: -ms-linear-gradient(left, rgba(15,76,129,1) 0%, rgba(43,103,153,0.59) 50%, rgba(15,76,129,0.17) 100%);
+    background: linear-gradient(to right, rgba(15,76,129,1) 0%, rgba(43,103,153,0.59) 50%, rgba(15,76,129,0.17) 100%);
+}

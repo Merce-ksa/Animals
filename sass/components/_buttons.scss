@@ -1,0 +1,118 @@
+%button_banner {
+    height: 40px;
+    padding: 10px 25px;
+    border: 1px solid $white;
+    border-radius: 2px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+
+    @include media(mobile-only){
+        font-size: 14px;
+        padding: 10px 22px;
+    }
+
+    @include media(mobile-s){
+        padding: 8px 20px;
+    }
+}
+
+%button_main {
+    height: 40px;
+    background-color: $button;
+    border: none;
+    border-radius: 2px;
+    outline: 0;
+    font-family: $Font;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+
+    @include media(mobile-m){
+        font-size: 16px;
+    }
+}
+
+.add-quantity{
+    line-height: 40px;
+    border-radius: 2px;
+    border: 1.5px solid $button;
+
+    .icon-plus, .icon-minus {
+        padding: 10px;
+        font-size: 25px;
+        color: $button;
+        cursor: pointer;
+    }
+    
+    .quantity {
+        padding: 10px 18px;
+        font-size: 25px;
+    }
+
+    @include media(mobile-l){
+        .icon-plus, .icon-minus {
+            padding: 5px;
+            font-size: 20px;
+        }
+        
+        .quantity {
+            padding: 10px 14px;
+            font-size: 20px;
+        }
+    }
+}
+
+.social-media {
+    ul {
+        display: flex;
+    }
+
+    li {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border-radius: 50%;
+        border: 1px solid $primary;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    li:not(:nth-child(1)){
+        margin-left: 20px;
+    }
+
+    li:hover {
+        background-color: $button;
+        border: 1px solid $button;
+    }
+
+    li:hover a{
+        color: $white;
+    }
+
+    a {
+        line-height: 20px;
+        color: $secondary;
+        transition: 0.5s;
+    }
+}
+
+.btn_return {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $secondary;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    animation: returnIni 3s linear infinite;
+
+    a {
+        font-size: 30px;
+        color: $primary;
+    }
+}

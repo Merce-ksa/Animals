@@ -1,0 +1,41 @@
+.user__content {
+  width: 50%;
+  margin: auto;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+
+  button {
+    background-color: $white;
+    color: $primary;
+    @extend %button_main;
+    transition: 0.3s;
+  }
+
+  button:nth-child(2) {
+    margin-left: 30px;
+  }
+
+  button:hover {
+    font-weight: 600;
+    color: $secondary;
+  }
+
+  button.active {
+    color: $black;
+    font-weight: 600;
+  }
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  animation: fadeEffect 1s;
+}
+
+
+

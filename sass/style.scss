@@ -1,0 +1,24 @@
+@import "libs/variables";
+@import "libs/mixins";
+
+@import "components/breakpoints";
+@import "components/globals";
+@import "components/fonts";
+@import "components/buttons";
+@import "components/animations";
+@import "components/hero";
+@import "components/header";
+@import "components/footer";
+@import "components/crums";
+@import "components/products";
+@import "components/forms";
+@import "components/cart";
+
+@import "layouts/shop";
+@import "layouts/home";
+@import "layouts/shop_products";
+@import "layouts/about";
+@import "layouts/user";
+@import "layouts/contact";
+@import "layouts/faqs";
+@import "layouts/checkout";

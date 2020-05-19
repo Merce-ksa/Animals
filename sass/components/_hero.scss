@@ -1,0 +1,129 @@
+.hero {
+    width: 100%;
+    @include gradientHero; 
+}
+  
+.banner {
+width: 100%;
+max-width: 1000px;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+margin: auto;
+
+    &__content {
+        align-items: center;
+        margin: auto;
+    }
+
+    &__content h1{
+        margin-bottom: 0;
+        font-size: 50px;
+        color: $white;
+    }
+
+    &__content p{
+        margin-top: 0;
+        font-size: 18px;
+        color: $white;
+    }
+
+    &__content a {
+        position: relative;
+        top: 20px;
+        @extend %button_banner;
+    }
+
+    &__image {
+        margin: 0;
+        overflow: hidden;
+    }
+
+    &__image img {
+        width: 100%;
+        vertical-align: top;
+    }
+    
+    @include media(tablet-p-only){
+        max-width: 990px;
+        justify-content: flex-end;
+        position: relative;
+
+        &__content {
+            width: 30%;
+            margin-left: 20px;
+            position: absolute;
+            left: 0
+        }  
+
+        &__image {
+            width: 70%;
+        }
+    }
+
+    @include media(mobile-only){
+        max-width: 768px;
+        justify-content: flex-end;
+        position: relative;
+
+        &__content {
+            width: 50%;
+            margin-left: 20px;
+            position: absolute;
+            left: 0
+        }
+
+        &__content h1{
+            font-size: 40px;
+        }
+
+        &__content p{
+            font-size: 16px;
+        }
+
+        &__image {
+            width: 70%;
+        }
+    }
+    
+    @include media(mobile-l){
+        max-width: 429px;
+        justify-content: flex-end;
+        position: relative;
+
+        &__content {
+            width: 50%;
+            margin-left: 20px;
+            position: absolute;
+            left: 0
+        }
+
+        &__content h1{
+            margin-top: 0;
+            font-size: 36px;
+        }
+
+        &__content p{
+            font-size: 14px;
+        }
+
+        &__content a {
+            top: 15px;
+        }
+    } 
+    
+    @include media(mobile-m){
+        &__content a {
+            top: 10px;
+        }
+    } 
+    @include media(mobile-s){
+        &__content {
+            width: 60%;
+        }
+
+        &__content h1{
+            font-size: 34px;
+        }
+    }   
+}

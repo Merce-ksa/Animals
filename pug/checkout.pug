@@ -1,0 +1,83 @@
+extends template.pug
+include libs/mixins.pug
+block content
+	main
+		h1 Comprar
+		section.checkout
+			.checkout__form
+				h3 Detalles de facturación
+				form(method="post").form
+					.form__user
+						.form__user-name
+							lable Nombre 
+							span *
+							input(type="text" required)
+						.form__user-mail 
+							label Apellido 
+							span *
+							input(type="email" name="mail" required)
+					.form__address
+						.form__address-street
+							label Dirección 
+							span *
+							input(type="text" name="street" required)
+						.form__address-postcode
+							label CP 
+							span *
+							input(type="text" name="cp" required)
+						.form__address-city
+							label Ciudad
+							span *
+							input(type="text" name="city" required)
+						.form__address-province
+							label Provincia
+							span *
+							input(type="text" name="province" required)
+					.form__user__contact
+						.form__user__contact-phone
+							lable Teléfono 
+							span *
+							input(type="text" required)
+						.form__user-mail
+							label Email 
+							span *
+							input(type="email" name="mail" required)
+					
+					
+			.checkout__order
+				h3 Su pedido
+				.order__table
+					.article__content
+						article
+							p Producto
+							p Total
+						article
+							p NombreProducto <span>×</span> 1
+							p 25 €
+						article
+							p NombreProducto <span>×</span> 1
+							p 25 €
+						article
+							p Total
+							p 50 €
+					.checkout__payment
+						form(method="post").form
+							.form__card
+								input(type="radio" id="visa" name="gender" value="male")
+								label(for="visa") Tarjeta Crédito / Débito
+							.form__paypal
+								input(type="radio" id="paypal" name="gender" value="male")
+								label(for="paypal") Paypal
+							.privacity
+								p
+									|Sus datos personales se utilizarán para procesar su pedido,
+									|respaldar su experiencia en este sitio web y para otros 
+									|fines descritos en nuestra <a href="#">política de privacidada</a>.
+							.form__btn-send
+								button(type="submit") Comprar
+					
+						
+				
+				
+				
+

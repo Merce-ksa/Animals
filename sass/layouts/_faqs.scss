@@ -1,0 +1,57 @@
+.faqs__shopping {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @include media(mobile-only){
+        display: block;
+    }
+}
+
+
+.faqs__shopping__title {
+    width: 10%;
+     h3 {
+        color: $button;
+    }
+
+    @include media(mobile-only){
+        width: 50%;
+        margin-top: 50px;
+        h3 {
+            margin-bottom: 0;
+        }
+    }
+}
+   
+.faqs__shopping__answers {
+    width: 90%;
+}
+
+.answers__content {
+    display: flex;
+    font-size: 14px;
+
+    .quiestions {
+        width: 40%;
+        line-height: $line-spacing;
+        font-weight: 600;
+    }
+
+    .answsers {
+        width: 60%;
+        line-height: $line-spacing;
+    }
+
+    @include media(mobile-l){
+        display: block;
+
+        .quiestions {
+            width: 100%;
+        }
+    
+        .answsers {
+            width: 100%;
+        }
+    }
+}

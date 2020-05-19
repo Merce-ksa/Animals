@@ -1,0 +1,44 @@
+include ../libs/mixins.pug
+footer
+	section.footer__main
+		.footer__inf
+			.help
+				h4 Ayuda e información
+				ul
+					li: a.help-link(href="delivery.html") Entregas y devoluciones
+					li: a(href="faqs.html") FAQs
+			.about
+				h4 Sobre nosotros
+				ul
+					li: a(href="about.html") Sobre nosotros
+					li: a(href="contact.html") Contacta
+			.shop-online
+				h4 Tienda online
+				ul
+					li: a(href="mujer.html") Mujer
+					li: a(href="man.html") Hombre
+					li: a(href="nino.html") Niño
+					li: a(href="bebe.html") Bebé
+					li: a(href="bolsas.html") Bolsas
+			.social-media
+				h4 Síguenos
+				+socialMediaList
+			.return
+				.btn_return
+					a(href="#").icon-chevron-up
+	
+	section.footer__main
+		.footer__privacy
+			.privacy-design
+				ul
+					li: img(src="img/brand.png", alt="Animals image")
+					li
+						a(href="https://github.com/Merce-ksa?tab=repositories" target="_blank")
+							span.icon-github
+					li: a(href="https://www.freepik.es/psd/negocios") Imágenes - www.freepik.es
+
+			.privacy-terms
+				ul
+					li: a(href="#") Política de privacidad
+					li: a(href="#") Términos de uso
+	

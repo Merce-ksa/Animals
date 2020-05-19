@@ -1,0 +1,36 @@
+extends template.pug
+block content
+	main
+		.user__content
+			.tabs
+				button.tablinks#defaultOpen(onclick="userAccess(event, 'login')") Login
+				button.tablinks(onclick="userAccess(event, 'registrer')") Registrarme
+
+			#login.tabcontent
+				form(name="formulari_info" method="post").form
+					.form__user-name
+						input(type="text" value="Nombre" required)
+					.form__user-pass
+						input(type="email" name="pass" value="Password" required)
+					.form__remember-me
+						input(type="checkbox" name="privacidad" required) 
+						label Recordar contraseña
+					.form__btn-send
+						button(type="submit") Login
+
+
+			#registrer.tabcontent
+				form(name="formulari_info" method="post").form
+					.form__user-name
+						input(type="text" value="Nombre" required)
+					.form__user-mail-adress
+						input(type="text" name="email" value="Email" required)
+					.form__user-pass
+						input(type="email" name="pass" value="Password" required)
+					.form__privacity
+						input(type="checkbox" name="privacidad" required) 
+						label Acepto la política de privacidad
+					.form__btn-send
+						button(type="submit") Registrarme
+
+	script(src="js/user.js")

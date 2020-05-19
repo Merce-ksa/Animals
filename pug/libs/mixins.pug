@@ -1,0 +1,89 @@
+mixin productShop
+	a.content__section(href="woman.html")
+		h1 Mujer
+	a.content__section(href="child.html")
+		h1 Niño
+	a.content__section(href="man.html")
+		h1 Hombre
+	a.content__section(href="baby.html")
+		h1 Bebe
+	a.content__section(href="bag.html")
+		h1 Bolsas
+
+mixin productDetail(link, image, title, price)
+	a(href=link).product
+		figure.product-image
+			img(src="img/"+image)
+		h3.product-description=title
+		p.product-price=price
+
+mixin crumsList(pathname)
+	#crums.crums
+		ul.crum-list
+			li: a(href="index.html").crum-link Inicio
+			li: span.icon-chevron-right
+			li: a(href="shop.html").crum-link Tienda
+			li: span.icon-chevron-right
+			li: a(href="#").crum-link.active=pathname
+
+mixin crumsListProduct(link, nameLink, productName)
+	#crums.crums
+		ul.crum-list
+			li: a(href="index.html").crum-link Inicio
+			li: span.icon-chevron-right
+			li: a(href="shop.html").crum-link Tienda
+			li: span.icon-chevron-right
+			li: a(href=link+".html").crum-link=nameLink
+			li: span.icon-chevron-right
+			li: a(href="#").crum-link.active=productName
+
+mixin socialMediaList
+	ul
+		li: a(href="#").icon-ffacebook
+		li: a(href="#").icon-pinterest
+		li: a(href="#").icon-instagram
+		li: a(href="#").icon-twitter
+
+mixin buttonsQuantity
+	.add-quantity
+		span#minus.icon-minus
+		span#qty.quantity 1
+		span#plus.icon-plus
+
+mixin productDescription(srcImage, dataColor, titleShirt, codeShirt, priceProduct, descriptionShirt)
+	.product__detail__image
+		img(src="img/"+srcImage data-color=dataColor)#product-img
+		span.icon-maximize-2
+
+	.product__detail__description
+		h1.title=titleShirt
+		h4.code=codeShirt
+		p.text=descriptionShirt
+		
+		.product__detail__filter
+			.filter-colors
+				h3 Colors
+				ul.colors-list
+					li: a(href="#").color
+					li: a(href="#").color
+					li: a(href="#").color
+					li: a(href="#").color
+					li: a(href="#").color
+					li: a(href="#").color
+			.filter-sizes
+				h3 Tallas
+				ul.sizes-list
+					li: a(href="#").size XS
+					li: a(href="#").size S
+					li: a(href="#").size M
+					li: a(href="#").size L
+					li: a(href="#").size XL
+					li: a(href="#").size XXL
+			.product__detail__cart
+				h3.description-price=priceProduct
+				.buttons__cart
+					.buttons__cart__add
+						+buttonsQuantity
+						button#cart.btn-cart Añadir al carro
+					.buttons__cart__buy
+						button#buy.btn-buy Comprar

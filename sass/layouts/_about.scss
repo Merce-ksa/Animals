@@ -1,0 +1,32 @@
+.about-us {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+
+    &__img img{
+        max-width: 300px;
+    }
+
+    &__description {
+        line-height: 25px;
+    }
+
+    @include media(mobile-only){
+        display: block;
+        
+        &__img {
+            text-align: center;
+        } 
+    }
+    
+    @include media(mobile-l){
+
+        &__img img{
+            max-width: 80%;
+        }
+    } 
+}
+
+.organic {
+    padding-top: 80px;
+}

@@ -1,0 +1,17 @@
+extends template.pug
+include libs/mixins.pug
+block content
+    section.hero
+        .banner
+            .banner__content
+                h1 Nueva colección
+                p Las nuevas ilustraciones de Mònica
+                a(href="collection.html").content-link Entra ahora
+            .banner__image
+                img(src="img/hero.png")
+                
+    main.home
+        section.content
+            +productShop
+
+

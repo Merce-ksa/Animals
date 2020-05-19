@@ -1,0 +1,11 @@
+extends template.pug
+include libs/mixins.pug
+block content
+	main
+		h1 Mujer
+		+crumsList("Mujer")
+		
+		section.product-list
+			each womanProduct in womanProducts
+				+productDetail(womanProduct.link, womanProduct.image, womanProduct.title, womanProduct.price)
+			

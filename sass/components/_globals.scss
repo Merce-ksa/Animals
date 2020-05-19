@@ -1,0 +1,49 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: $Font;  
+}
+
+main {
+    max-width: 1000px;
+    min-height: 500px;
+    margin: 80px auto;
+    box-sizing: border-box;
+
+    @include media(desktop-s){
+        max-width: 90%;
+    }
+
+    @include media(mobile-only){
+        max-width: 90%;
+    }
+    
+    @include media(mobile-l){
+        max-width: 90%;
+    } 
+    
+    @include media(mobile-m){
+        max-width: 90%;
+    } 
+    @include media(mobile-s){
+        max-width: 90%;
+    }
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+

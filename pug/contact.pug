@@ -1,0 +1,44 @@
+extends template.pug
+include libs/mixins.pug
+block content
+	main
+		h1 Contacto
+		.contact__content
+			section.formulary
+				form(name="formulari_info" method="post").form
+					.form__user
+						.form__user-name
+							lable Nombre 
+							span *
+							input(type="text" required)
+						.form__user-mail 
+							label Email 
+							span *
+							input(type="email" name="mail" required)
+					.form__message 
+						label Tu mensaje 
+						span *
+						textarea(name="message" cols="60" rows="12" required)
+					.form__privacity
+						input(type="checkbox" name="privacidad" required) 
+						label Acepto la política de privacidad
+					.form__btn-send
+						button(type="submit") Enviar mensaje
+			
+			section.contact
+				.social-media
+					+socialMediaList
+
+				.our-office
+					h1 Nuestra oficina
+					p C. Peronella la grande
+						<br>08024 Barcelona <br/>
+				.number
+					h1 Contacta con nosotros
+
+					.phone
+						h4 TELÉFONO
+						p 555 555 555
+					.mail
+						h4 EMAIL
+						a animals@animalstshirt.com

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, Animation">
+    <meta name="author" content="Mercè Casamitjana">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Animals</title>
+  </head>
+  <body>
+    <header class="nav__main" id="header-main">
+      <div class="menu-hamburger"><a href="#" id="menu_on"><span></span><span></span><span></span></a></div>
+      <div class="header__brand"><a class="brand" href="index.html"><img class="brand-img" src="img/brand.png"></a></div>
+      <div class="header__menu">
+        <div class="menu-nav" id="menu">
+          <ul class="nav-options">
+            <li><a class="shop" href="index.html">Inicio</a></li>
+            <li><a class="collection" href="shop.html">Tienda</a></li>
+            <li><a class="about" href="about.html">Nosotros</a></li>
+            <li><a class="contact" href="contact.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__user">
+        <ul>
+          <li><a class="icon-user" href="user.html"></a></li>
+          <li><a class="icon-shopping-cart" href="cart.html" id="icon-shopping-cart" data-count="0"></a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <h1>Comprar</h1>
+      <section class="checkout">
+        <div class="checkout__form">
+          <h3>Detalles de facturación</h3>
+          <form class="form" method="post">
+            <div class="form__user">
+              <div class="form__user-name">
+                <lable>Nombre </lable><span>*</span>
+                <input type="text" required>
+              </div>
+              <div class="form__user-mail"> 
+                <label>Apellido </label><span>*</span>
+                <input type="email" name="mail" required>
+              </div>
+            </div>
+            <div class="form__address">
+              <div class="form__address-street">
+                <label>Dirección </label><span>*</span>
+                <input type="text" name="street" required>
+              </div>
+              <div class="form__address-postcode">
+                <label>CP </label><span>*</span>
+                <input type="text" name="cp" required>
+              </div>
+              <div class="form__address-city">
+                <label>Ciudad</label><span>*</span>
+                <input type="text" name="city" required>
+              </div>
+              <div class="form__address-province">
+                <label>Provincia</label><span>*</span>
+                <input type="text" name="province" required>
+              </div>
+            </div>
+            <div class="form__user__contact">
+              <div class="form__user__contact-phone">
+                <lable>Teléfono </lable><span>*</span>
+                <input type="text" required>
+              </div>
+              <div class="form__user-mail">
+                <label>Email </label><span>*</span>
+                <input type="email" name="mail" required>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="checkout__order">
+          <h3>Su pedido</h3>
+          <div class="order__table">
+            <div class="article__content">
+              <article>
+                <p>Producto</p>
+                <p>Total</p>
+              </article>
+              <article>
+                <p>NombreProducto <span>×</span> 1</p>
+                <p>25 €</p>
+              </article>
+              <article>
+                <p>NombreProducto <span>×</span> 1</p>
+                <p>25 €</p>
+              </article>
+              <article>
+                <p>Total</p>
+                <p>50 €</p>
+              </article>
+            </div>
+            <div class="checkout__payment">
+              <form class="form" method="post">
+                <div class="form__card">
+                  <input type="radio" id="visa" name="gender" value="male">
+                  <label for="visa">Tarjeta Crédito / Débito</label>
+                </div>
+                <div class="form__paypal">
+                  <input type="radio" id="paypal" name="gender" value="male">
+                  <label for="paypal">Paypal</label>
+                </div>
+                <div class="privacity">
+                  <p>
+                    Sus datos personales se utilizarán para procesar su pedido,
+                    respaldar su experiencia en este sitio web y para otros 
+                    fines descritos en nuestra <a href="#">política de privacidada</a>.
+                  </p>
+                </div>
+                <div class="form__btn-send">
+                  <button type="submit">Comprar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="footer__main">
+        <div class="footer__inf">
+          <div class="help">
+            <h4>Ayuda e información</h4>
+            <ul>
+              <li><a class="help-link" href="delivery.html">Entregas y devoluciones</a></li>
+              <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+          </div>
+          <div class="about">
+            <h4>Sobre nosotros</h4>
+            <ul>
+              <li><a href="about.html">Sobre nosotros</a></li>
+              <li><a href="contact.html">Contacta</a></li>
+            </ul>
+          </div>
+          <div class="shop-online">
+            <h4>Tienda online</h4>
+            <ul>
+              <li><a href="mujer.html">Mujer</a></li>
+              <li><a href="man.html">Hombre</a></li>
+              <li><a href="nino.html">Niño</a></li>
+              <li><a href="bebe.html">Bebé</a></li>
+              <li><a href="bolsas.html">Bolsas</a></li>
+            </ul>
+          </div>
+          <div class="social-media">
+            <h4>Síguenos</h4>
+                <ul>
+                  <li><a class="icon-ffacebook" href="#"></a></li>
+                  <li><a class="icon-pinterest" href="#"></a></li>
+                  <li><a class="icon-instagram" href="#"></a></li>
+                  <li><a class="icon-twitter" href="#"></a></li>
+                </ul>
+          </div>
+          <div class="return">
+            <div class="btn_return"><a class="icon-chevron-up" href="#"></a></div>
+          </div>
+        </div>
+      </section>
+      <section class="footer__main">
+        <div class="footer__privacy">
+          <div class="privacy-design">
+            <ul>
+              <li><img src="img/brand.png" alt="Animals image"></li>
+              <li><a href="https://github.com/Merce-ksa?tab=repositories" target="_blank"><span class="icon-github"></span></a></li>
+              <li><a href="https://www.freepik.es/psd/negocios">Imágenes - www.freepik.es</a></li>
+            </ul>
+          </div>
+          <div class="privacy-terms">
+            <ul>
+              <li><a href="#">Política de privacidad</a></li>
+              <li><a href="#">Términos de uso</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="js/header.js"></script>
+    <script src="js/menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+extends template.pug
+include libs/mixins.pug
+block content
+	main
+		h1 Carrito
+		section.summary__product
+			.cart 
+				.cart__product
+					h4 PRODUCTO
+				.cart__price.product-hide
+					h4 PRECIO
+				.cart__quantity
+					h4 CANTIDAD
+				.cart__total.product-hide
+					h4 TOTAL
+				.cart__remove
+			.cart 
+				.cart__product
+					img(src="img/m_il1_white.png")
+					p ClosK. Camiseta de hombre talla L color blanco.
+				.cart__price
+					p 25 €
+				.cart__quantity
+					+buttonsQuantity
+				.cart__total.product-hide
+					p 25 € 
+				.cart__remove
+					span.icon-x
+			.cart 
+				.cart__product
+					img(src="img/m_il1_white.png")
+					p ClosK. Camiseta de hombre talla L color blanco.
+				.cart__price
+					p 25 €
+				.cart__quantity
+					+buttonsQuantity
+				.cart__total.product-hide
+					p 25 € 
+				.cart__remove
+					span.icon-x
+			
+			.cart 
+				.cart__total-title
+					h3 Precio total
+				.cart__total-price
+					h3 50 € 
+		.chechout
+			a(href="checkout.html")#checkout.btn-checkout Finalizar compra

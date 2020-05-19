@@ -1,0 +1,64 @@
+.contact__content {
+    display: flex;
+    justify-content: space-between;
+
+    @include media(tablet-p-only){
+        display: block;
+        width: 70%;
+        margin: auto;
+    }
+
+    @include media(mobile-only){
+        display: block;
+        width: 70%;
+        margin: auto;
+
+    }
+    
+    @include media(mobile-l){
+        display: block;
+        width: 90%;
+        margin: auto;
+    
+    } 
+    
+    @include media(mobile-m){
+        display: block;
+        width: 90%;
+        margin: auto;
+    
+    } 
+    @include media(mobile-s){
+        display: block;
+        width: 90%;
+        margin: auto;
+    
+    }
+}
+
+section.contact {
+
+    @include media(mobile-only){
+        margin-top: 60px;
+    }
+}
+
+.our-office, .number {
+    margin-top: 30px;
+}
+
+.phone, .mail {
+    p, h4 {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.mail {
+    margin-top: 20px;
+}
+
+
+
+
+

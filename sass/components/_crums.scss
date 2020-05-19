@@ -1,0 +1,32 @@
+.crums {
+    margin: 0 0 3em 0;
+
+    .crum-list {
+        display: flex;
+    }
+
+    .crum-list li:not(:nth-child(1)) {
+        margin: 0 5px;
+        padding: 0;
+    }
+
+    .crum-link {
+        color: $secondary;
+    }
+
+    .crum-link.active {
+        color: $black;
+    }
+
+    span {
+        font-size: 10px;
+        color: $secondary;
+    }
+
+    @include media(mobile-m){
+        .crum-list li:not(:nth-child(1)) {
+            margin: 0 0.1em;
+        }
+    }
+}
+
